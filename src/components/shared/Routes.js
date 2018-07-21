@@ -1,22 +1,33 @@
-import React from 'react'
+import React from "react";
+import auth from "../../auth/initAuth";
 
 //Routes
-import NotFound from './NotFound'
-import App from './../App';
-import PageOne from './../PageOne'
+import NotFound from "./NotFound";
+import App from "./../App";
+import PageOne from "./../PageOne";
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-const Routes = (props) => {
+const PrivateRoute = ({component, ...rest}) => (
+  <Route {...rest} render={props => (
+    auth.loggedIn() ? (
+      React.createElement(component, props)
+    ): (<Redirect to="/NotFound" />
+    )
+  )} />
+)
+
+const Routes = props => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={App} />  
-        <Route path="/PageOne" component={PageOne} />  
-        <Route component={NotFound} />  
+        <Route path="/" exact component={App} />
+        <Route path="/PageOne" component={PageOne} />
+        <Route path="/NotFound" component={NotFound} />  
+        <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default Routes
+export default Routes;
