@@ -1,6 +1,6 @@
 import AuthService from "./authService";
 const auth = new AuthService(
-  process.env.REACT_APP_AUTH_CLIENT_ID,
-  process.env.REACT_APP_AUTH_DOMAIN_ADDRESS
+  process.env.HYPHEN_DEMO_AUTHs_CLIENT_ID,
+  process.env.HYPHEN_DEMO_AUTH_DOMAIN_ADDRESS
 );
 export default auth;
