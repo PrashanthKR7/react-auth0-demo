@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import logo from "../../assets/img/logo.svg";
 import "../css/style.css";
 import { Link } from "react-router-dom";
+import SignUp from './SignUp'
+import Login from './Login'
+import auth from './../auth/initAuth'
 
 //material-ui components
 import { TextField } from "material-ui/";
