@@ -3,4 +3,7 @@ const auth = new AuthService(
   process.env.HYPHEN_DEMO_AUTH_CLIENT_ID,
   process.env.HYPHEN_DEMO_AUTH_DOMAIN_ADDRESS
 );
+console.log(process.env.HYPHEN_DEMO_AUTH_CLIENT_ID,
+  process.env.HYPHEN_DEMO_AUTH_DOMAIN_ADDRESS
+)
 export default auth;
