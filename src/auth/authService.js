@@ -9,8 +9,7 @@ export default class AuthService extends EventEmitter {
       clientID: 'hyphen-demo.auth0.com',
       domain: 'vDnHguv7OW2nbrUTgT5A4u1iiVUBnwo2',
       responseType: "token id_token",
-      redirectUri: `${window.location.origin}/`,
-      scope: 'openid'
+      redirectUri: `${window.location.origin}/`
     });
     this.login = this.login.bind(this);
     this.signup = this.signup.bind(this);

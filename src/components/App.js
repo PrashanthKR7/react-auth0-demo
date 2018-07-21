@@ -44,8 +44,7 @@ class App extends Component {
         <div className="App">
           <div className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h2>Welcome to a vanilla React with react-router 4</h2>
-            <h2>with Auth0 Authentication</h2>
+            <h2>Auth0 Authentication</h2>
           </div>
 
           <div className="border color-blue">
