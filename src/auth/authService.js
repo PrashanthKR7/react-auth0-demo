@@ -6,8 +6,8 @@ export default class AuthService extends EventEmitter {
     super();
     // Configure Auth0
     this.auth0 = new auth0.WebAuth({
-      clientID: clientId,
-      domain: domain,
+      clientID: 'hyphen-demo.auth0.com',
+      domain: 'vDnHguv7OW2nbrUTgT5A4u1iiVUBnwo2',
       responseType: "token id_token",
       redirectUri: `${window.location.origin}/`,
       scope: 'openid'
