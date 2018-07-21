@@ -20,7 +20,7 @@ export default class AuthService extends EventEmitter {
   login(username, password) {
     this.auth0.client.login(
       {
-        realm: "react-auth0",
+        realm: "hyphen-demo",
         username,
         password
       },
@@ -40,7 +40,7 @@ export default class AuthService extends EventEmitter {
   signup(email, password) {
     this.auth0.redirect.signupAndLogin(
       {
-        connection: "react-auth0",
+        connection: "hyphen-demo",
         email,
         password
       },
