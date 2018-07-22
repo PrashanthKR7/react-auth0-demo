@@ -25,7 +25,7 @@ export default class AuthService extends EventEmitter {
       },
       (err, authResult) => {
         if (err) {
-          console.error("Error: " + err);
+          console.error("Error: " , err);
           return;
         }
         if (authResult && authResult.idToken && authResult.accessToken) {
@@ -45,7 +45,7 @@ export default class AuthService extends EventEmitter {
       },
       function(err) {
         if (err) {
-          alert("Error: " + err.description);
+          alert("Error: " , err);
         }
       }
     );
