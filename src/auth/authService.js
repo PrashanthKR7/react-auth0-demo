@@ -25,7 +25,7 @@ export default class AuthService extends EventEmitter {
       },
       (err, authResult) => {
         if (err) {
-          alert("Error: " + err.description);
+          console.error("Error: " + err);
           return;
         }
         if (authResult && authResult.idToken && authResult.accessToken) {
