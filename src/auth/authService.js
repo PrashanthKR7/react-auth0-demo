@@ -11,6 +11,7 @@ export default class AuthService extends EventEmitter {
       responseType: "token id_token",
       redirectUri: `${window.location.origin}/`
     });
+
     this.login = this.login.bind(this);
     this.signup = this.signup.bind(this);
     this.loginWithGoogle = this.loginWithGoogle.bind(this);
