@@ -6,8 +6,9 @@ import { AUTH_CONFIG } from "./auth0-variables";
 class Lock extends Component {
   lock = new Auth0Lock(AUTH_CONFIG.clientId, AUTH_CONFIG.domain, {
     auth: {
-      responseType: "token id_token",
-      sso: false
+      responseType: "token",
+      sso: false,
+      redirect: false
     },
     container: AUTH_CONFIG.container,
     theme: {
