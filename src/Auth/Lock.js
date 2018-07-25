@@ -11,7 +11,7 @@ class Lock extends Component {
     },
     container: AUTH_CONFIG.container,
     theme: {
-      primaryColor: "#3a99d8"
+      primaryColor: "#3a99d7"
     }
   });
 
