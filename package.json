@@ -1,29 +1,21 @@
 {
-  "name": "react-material-ui-boilerplate",
-  "license": "MIT",
-  "version": "1.0.2",
+  "name": "centralized-login",
+  "version": "0.1.0",
+  "private": false,
   "devDependencies": {
-    "autoprefixer-stylus": "^0.13.0",
-    "concurrently": "^3.1.0",
-    "react-scripts": "0.8.5",
-    "stylus": "^0.54.5"
+    "react-scripts": "1.0.17"
   },
   "dependencies": {
-    "auth0-js": "^9.7.2",
-    "auth0-lock": "^11.7.2",
-    "history": "^4.5.0",
-    "jwt-decode": "^2.2.0",
-    "material-ui": "^0.16.6",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-router-dom": "^4.3.1",
-    "react-tap-event-plugin": "^2.0.1"
+    "ajv": "^6.5.2",
+    "auth0-lock": "^11.0.1",
+    "react": "^16.4.1",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.4.1",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.2.2"
   },
   "scripts": {
     "start": "set PORT=9000 && react-scripts start",
-    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
-    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
-    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

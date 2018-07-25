@@ -1,15 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import './index.css';
 
-// Routes
-import Routes from './components/shared/Routes'
-
-// Material UI functions
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin()
-
-
-ReactDOM.render(
-  <Routes />,
-  document.getElementById('root')
-);
+render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('root'));
