@@ -6,10 +6,6 @@ import "./../Styles/Profile.css";
 
 class Profile extends Component {
 
-  constructor(props) {
-    super(props)
-  }
-
   componentWillMount() {
     this.setState({ profile: JSON.parse(localStorage.getItem("profile")) || null });
   }
