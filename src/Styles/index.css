@@ -2,15 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
-
-body {
 	color: #333;
 	font-family: Georgia, Times, 'Times New Roman';
 	line-height: 1.75;
   margin: 0 auto;
-  max-width: 640px;
-  padding: 32px;
 }
 
 header {
@@ -18,7 +13,11 @@ header {
 }
 
 main {
-  margin: 0 auto;
+	margin: 0 auto;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: row;
+	justify-content: center;
 }
 
 main a,
@@ -81,4 +80,18 @@ nav > ul > li > a:visited {
 nav > ul > li > a:hover,
 nav > ul > li > a:visited:hover {
 	color: #c10c0c;
+}
+
+main>div {
+	min-width: 400px;
+}
+
+#smileyContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#smileyContainer > img {
+	height:300px
 }
