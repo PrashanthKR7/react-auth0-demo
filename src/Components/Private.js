@@ -6,7 +6,7 @@ const Private = (props) => (
   isAuthenticated() ? (
     <div>
       <h2>Private Page</h2>
-      <p>Hey, you’re logged in!</p>
+      <p>Hey, you’re logged in! This page can only be viewed if you are logged in!</p>
     </div>
   ) : (
     <Redirect to={{

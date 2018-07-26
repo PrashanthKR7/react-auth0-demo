@@ -12,10 +12,13 @@ class Lock extends Component {
     },
     container: AUTH_CONFIG.container,
     theme: {
-      primaryColor: "#3a99d7"
+      primaryColor: "#4fc4d0",
+      logo: "https://gethyphen.com/images/apple-touch-icon-72x72.png"
+    },
+    languageDictionary: {
+      title: "Hyphen Auth"
     }
   });
-
 
   constructor(props) {
     super(props);
@@ -34,7 +37,7 @@ class Lock extends Component {
       localStorage.setItem("id_token", authResult.idToken);
       localStorage.setItem("expires_at", expiresAt);
 
-      this.getUserProfile(authResult.accessToken)
+      this.getUserProfile(authResult.accessToken);
 
       this.setState({ loggedIn: true });
     });
